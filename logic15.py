@@ -6,4 +6,6 @@ def main(a):
     Returns:
         True if all digits sum is odd, False otherwise
     """
-    return
+    b=a%10+a//100
+    c=(a%100-a%10)//10
+    return (b+c)%2!=0
