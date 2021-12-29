@@ -9,4 +9,4 @@ def main(a,b,c):
         True if b is between a and c, False otherwise
     """
 
-    return a<b and b<c
+    return b>a and b<c and a<c
