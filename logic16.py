@@ -6,4 +6,13 @@ def main(a):
     Returns:
         True if a is five-digit number, False otherwise
     """
-    return a//10000>0 and a//100000==0
+    x1=a%10
+    a//=10
+    x2=a%10
+    a//=10
+    x3=a%10
+    a//=10
+    x4=a%10
+    a//=10
+    x5=a%10
+    return x1>=0 and x2>=0 and x3>=0 and x4>=0 and x5>0
